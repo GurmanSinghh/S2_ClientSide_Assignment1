@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>BMR Calculator</title>
+    <link rel="stylesheet" href="Assignment1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<!--- Name: Gurman Singh
+      Student ID: 301183986 --->
+<body>
+    <header>
+        
+        <div class="navigationbar">
+           <a class="currentpage" href="Contact.html">Metric</a>
+                    </div>
+        <center>
+        <h1>BMR Calculator</h1>
+            </center>
+    </header>
+
+    <div class="aboutmediv">
+        <div class="aboutmehalf">
+            <br /><br />
+            <center>
+                <b>Information On Activity Level:</b>
+                <br />
+                <p>
+                <b>Sedentary: </b>Little to no exercise
+                    <br />
+                    <b>Lightly Active: </b>Light exercise or sports 1-3 days/week
+                    <br />
+                    <b>Moderately Active: </b>Moderate exercise or sports 3-5 days/week
+                    <br />
+                    <b>Very Active: </b>Hard exercise or sports 6-7 days/week
+                    <br />
+                    <b>Extra Active: </b>Very hard exercise or sports & physical job or 2x a day training.
+                    </p>
+            </center>
+
+        </div>
+        <div class="column" style="padding-right: 50px; padding-left: 100px;">
+            
+                <h2>BMR Calculation</h2>
+                <p></p>
+                <br /><br />
+
+                      <form action="#">
+                          Gender:
+                          <select id="gender">
+                              <option value="male" name="masc">Male</option>
+                              <option value="female" name="fem">Female</option>
+                          </select>
+                          Age:<br>
+                          <input type="number" id="age" value="20"><br>
+                          Height:<br>
+                          <input type="number" id="height" value="180"><br>
+                          Weight:<br>
+                          <input type="number" id="weigth" value="80"><br>
+                          Please choose your activity level: <br>
+                          <input type="radio" id="sedentary" name="name" value="Sedentary">Sedentary <br>
+                          <input type="radio" id="lightly active" name="name" value="Lightly">Lightly Active<br>
+                          <input type="radio" id="moderately active" name="name" value="Moderately">Moderately Active <br>
+                          <input type="radio" id="very active" name="name" value="Active">Very Active<br>
+                          <input type="radio" id="extra active" name="name" value="Veryactive">Extra Active <br>
+
+                      </form>
+
+                <button type="button"
+                        onclick="calcul()">
+                    Result
+            
+
+                <p id="lblResult">BMR</p>
+            
+            
+            <br />
+
+        </div>
+    </div>
+
+    <script src="Assignment1.js">
+
+    </script>
+
+    <font color="white">
+
+        <div style="background-color: #212125;">
+            <br />
+            <center>
+                <p>Copyright &copy; Gurman Singh. Web Interface Design. Comp 213.</p>
+            </center>
+            <br />
+        </div>
+    </font>
+
+</body>
+</html>
